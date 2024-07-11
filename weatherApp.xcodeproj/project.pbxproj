@@ -8,20 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		4F0074DA2C3F7D4900A6A482 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0074D92C3F7D4900A6A482 /* AppDelegate.swift */; };
-		4F0074DC2C3F7D4900A6A482 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0074DB2C3F7D4900A6A482 /* SceneDelegate.swift */; };
 		4F0074DE2C3F7D4900A6A482 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0074DD2C3F7D4900A6A482 /* ViewController.swift */; };
 		4F0074E32C3F7D4C00A6A482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F0074E22C3F7D4C00A6A482 /* Assets.xcassets */; };
 		4F0074E62C3F7D4C00A6A482 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4F0074E52C3F7D4C00A6A482 /* Base */; };
+		4F0074EE2C3F7E1200A6A482 /* CurrentWeatherResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0074ED2C3F7E1200A6A482 /* CurrentWeatherResult.swift */; };
+		4F0074F02C3F7E2200A6A482 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0074EF2C3F7E2200A6A482 /* TableViewCell.swift */; };
+		4F0074F22C3F7E4600A6A482 /* ForecastWeatherResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0074F12C3F7E4600A6A482 /* ForecastWeatherResult.swift */; };
+		4F0074F52C3F8BB900A6A482 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4F0074F42C3F8BB900A6A482 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F0074D62C3F7D4900A6A482 /* weatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F0074D92C3F7D4900A6A482 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F0074DB2C3F7D4900A6A482 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4F0074DD2C3F7D4900A6A482 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4F0074E22C3F7D4C00A6A482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F0074E52C3F7D4C00A6A482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F0074E72C3F7D4C00A6A482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F0074ED2C3F7E1200A6A482 /* CurrentWeatherResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherResult.swift; sourceTree = "<group>"; };
+		4F0074EF2C3F7E2200A6A482 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4F0074F12C3F7E4600A6A482 /* ForecastWeatherResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastWeatherResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F0074F52C3F8BB900A6A482 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,11 +61,13 @@
 			isa = PBXGroup;
 			children = (
 				4F0074D92C3F7D4900A6A482 /* AppDelegate.swift */,
-				4F0074DB2C3F7D4900A6A482 /* SceneDelegate.swift */,
 				4F0074DD2C3F7D4900A6A482 /* ViewController.swift */,
 				4F0074E22C3F7D4C00A6A482 /* Assets.xcassets */,
 				4F0074E42C3F7D4C00A6A482 /* LaunchScreen.storyboard */,
 				4F0074E72C3F7D4C00A6A482 /* Info.plist */,
+				4F0074ED2C3F7E1200A6A482 /* CurrentWeatherResult.swift */,
+				4F0074EF2C3F7E2200A6A482 /* TableViewCell.swift */,
+				4F0074F12C3F7E4600A6A482 /* ForecastWeatherResult.swift */,
 			);
 			path = weatherApp;
 			sourceTree = "<group>";
@@ -80,6 +88,9 @@
 			dependencies = (
 			);
 			name = weatherApp;
+			packageProductDependencies = (
+				4F0074F42C3F8BB900A6A482 /* SnapKit */,
+			);
 			productName = weatherApp;
 			productReference = 4F0074D62C3F7D4900A6A482 /* weatherApp.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 4F0074CD2C3F7D4900A6A482;
+			packageReferences = (
+				4F0074F32C3F8BB900A6A482 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 4F0074D72C3F7D4900A6A482 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,9 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F0074F02C3F7E2200A6A482 /* TableViewCell.swift in Sources */,
 				4F0074DE2C3F7D4900A6A482 /* ViewController.swift in Sources */,
 				4F0074DA2C3F7D4900A6A482 /* AppDelegate.swift in Sources */,
-				4F0074DC2C3F7D4900A6A482 /* SceneDelegate.swift in Sources */,
+				4F0074F22C3F7E4600A6A482 /* ForecastWeatherResult.swift in Sources */,
+				4F0074EE2C3F7E1200A6A482 /* CurrentWeatherResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +365,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F0074F32C3F8BB900A6A482 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F0074F42C3F8BB900A6A482 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F0074F32C3F8BB900A6A482 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F0074CE2C3F7D4900A6A482 /* Project object */;
 }
